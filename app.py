@@ -11,7 +11,7 @@ computer_score = 0
 
 # Function to get user input and handle invalid options
 def get_user_input():
-    user_input = input('Enter rock, paper, or scissors: ')
+    user_input = input('Enter rock, paper, or scissors: ').lower()
     if user_input not in game_options:
         print('Invalid option. Please try again.')
         return get_user_input()
